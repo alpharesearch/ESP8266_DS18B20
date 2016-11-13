@@ -104,11 +104,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# D
+# D-RESCUE-esp8266
 #
-DEF D D 0 40 N N 1 F N
+DEF D-RESCUE-esp8266 D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "D" 0 -100 50 H V C CNN
+F1 "D-RESCUE-esp8266" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -207,11 +207,11 @@ X 2 2 300 0 200 L 50 50 0 1 P I
 ENDDRAW
 ENDDEF
 #
-# Screw_Terminal_1x02
+# Screw_Terminal_1x02-RESCUE-esp8266
 #
-DEF Screw_Terminal_1x02 J 0 30 Y N 1 F N
+DEF Screw_Terminal_1x02-RESCUE-esp8266 J 0 30 Y N 1 F N
 F0 "J" 0 250 50 H V C TNN
-F1 "Screw_Terminal_1x02" -150 0 50 V V C TNN
+F1 "Screw_Terminal_1x02-RESCUE-esp8266" -150 0 50 V V C TNN
 F2 "" 0 -225 50 H I C CNN
 F3 "" -25 0 50 H I C CNN
 $FPLIST

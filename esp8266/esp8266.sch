@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:esp8266-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -110,7 +111,7 @@ F 3 "" H 4800 1600 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D1
+L D-RESCUE-esp8266 D1
 U 1 1 5823A53F
 P 7050 1600
 F 0 "D1" H 7050 1700 50  0000 C CNN
@@ -187,7 +188,7 @@ F 3 "" H 4650 3150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Screw_Terminal_1x02 J1
+L Screw_Terminal_1x02-RESCUE-esp8266 J1
 U 1 1 5823AAE7
 P 3650 1800
 F 0 "J1" H 3650 2050 50  0000 C TNN
