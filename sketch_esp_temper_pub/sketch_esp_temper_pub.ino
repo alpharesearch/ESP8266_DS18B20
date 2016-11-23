@@ -100,6 +100,7 @@ void loop() {
 void wifiConnect()
 {
     Serial.print("Connecting to AP");
+    WiFi.softAPdisconnect(true);
     WiFi.begin(AP_SSID, AP_PASSWORD);
     while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
