@@ -30,7 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:esp8266-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -160,7 +160,7 @@ U 1 1 5823A84A
 P 3250 3200
 F 0 "R3" V 3330 3200 50  0000 C CNN
 F 1 "4.7k" V 3250 3200 50  0000 C CNN
-F 2 "Resistors_THT:Resistor_Horizontal_RM10mm" V 3180 3200 50  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 3180 3200 50  0001 C CNN
 F 3 "" H 3250 3200 50  0000 C CNN
 	1    3250 3200
 	1    0    0    -1  
@@ -171,7 +171,7 @@ U 1 1 5823A89B
 P 4850 3150
 F 0 "R2" V 4930 3150 50  0000 C CNN
 F 1 "2.2k" V 4850 3150 50  0000 C CNN
-F 2 "Resistors_THT:Resistor_Horizontal_RM10mm" V 4780 3150 50  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4780 3150 50  0001 C CNN
 F 3 "" H 4850 3150 50  0000 C CNN
 	1    4850 3150
 	1    0    0    -1  
@@ -182,7 +182,7 @@ U 1 1 5823A960
 P 4650 3150
 F 0 "R1" V 4730 3150 50  0000 C CNN
 F 1 "2.2k" V 4650 3150 50  0000 C CNN
-F 2 "Resistors_THT:Resistor_Horizontal_RM10mm" V 4580 3150 50  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4580 3150 50  0001 C CNN
 F 3 "" H 4650 3150 50  0000 C CNN
 	1    4650 3150
 	1    0    0    -1  
@@ -532,4 +532,31 @@ Wire Wire Line
 	6450 1600 6900 1600
 Wire Wire Line
 	3850 1900 3950 1900
+$Comp
+L GND #PWR014
+U 1 1 5894FA52
+P 5350 3650
+F 0 "#PWR014" H 5350 3400 50  0001 C CNN
+F 1 "GND" H 5350 3500 50  0000 C CNN
+F 2 "" H 5350 3650 50  0000 C CNN
+F 3 "" H 5350 3650 50  0000 C CNN
+	1    5350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 5894FAF9
+P 5350 3500
+F 0 "C3" H 5442 3546 50  0000 L CNN
+F 1 "C_Small" H 5442 3455 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 0   0   50  0001 C CNN
+F 3 "" H 0   0   50  0001 C CNN
+	1    5350 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3400 5050 3400
+Connection ~ 5050 3400
+Wire Wire Line
+	5350 3600 5350 3650
 $EndSCHEMATC
