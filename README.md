@@ -1,6 +1,6 @@
 # ESP8266_DS18B20
 
-http://htmlpreview.github.io/?https://github.com/alpharesearch/ESP8266_DS18B20/blob/master/esp8266/bom/ibom.html
+https://htmlpreview.github.io/?https://github.com/alpharesearch/ESP8266_DS18B20/blob/master/esp8266/bom/ibom.html
 
 Here is the string for "Formatted row" at the IFTTT recipe I use:
 
