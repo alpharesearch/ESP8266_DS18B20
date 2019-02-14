@@ -1,34 +1,4 @@
-EESchema Schematic File Version 2
-LIBS:esp8266-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:esp8266-cache
 EELAYER 26 0
 EELAYER END
@@ -45,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_02X04 P1
+L esp8266-rescue:CONN_02X04 P1
 U 1 1 5823A171
 P 5300 3150
 F 0 "P1" H 5300 3515 50  0000 C CNN
@@ -56,7 +26,7 @@ F 3 "" H 5300 1950 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CP C2
+L esp8266-rescue:CP C2
 U 1 1 5823A34F
 P 6750 1750
 F 0 "C2" H 6775 1850 50  0000 L CNN
@@ -67,7 +37,7 @@ F 3 "" H 6750 1750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C1
+L esp8266-rescue:CP C1
 U 1 1 5823A471
 P 4950 1750
 F 0 "C1" H 4975 1850 50  0000 L CNN
@@ -78,7 +48,7 @@ F 3 "" H 4950 1750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 5823A4EB
 P 6050 2000
 F 0 "#PWR01" H 6050 1750 50  0001 C CNN
@@ -89,7 +59,7 @@ F 3 "" H 6050 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR02
+L power:VCC #PWR02
 U 1 1 5823A507
 P 7350 1600
 F 0 "#PWR02" H 7350 1450 50  0001 C CNN
@@ -100,7 +70,7 @@ F 3 "" H 7350 1600 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +3.3V #PWR03
+L power:+3.3V #PWR03
 U 1 1 5823A523
 P 4800 1600
 F 0 "#PWR03" H 4800 1450 50  0001 C CNN
@@ -111,7 +81,7 @@ F 3 "" H 4800 1600 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D-RESCUE-esp8266 D1
+L esp8266-rescue:D-RESCUE-esp8266 D1
 U 1 1 5823A53F
 P 7050 1600
 F 0 "D1" H 7050 1700 50  0000 C CNN
@@ -122,7 +92,7 @@ F 3 "" H 7050 1600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH PROG1
+L esp8266-rescue:SW_PUSH PROG1
 U 1 1 5823A680
 P 6050 3200
 F 0 "PROG1" H 6200 3310 50  0000 C CNN
@@ -133,7 +103,7 @@ F 3 "" H 6050 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 5823A808
 P 5700 3000
 F 0 "#PWR04" H 5700 2750 50  0001 C CNN
@@ -144,7 +114,7 @@ F 3 "" H 5700 3000 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +3.3V #PWR05
+L power:+3.3V #PWR05
 U 1 1 5823A82F
 P 5050 3450
 F 0 "#PWR05" H 5050 3300 50  0001 C CNN
@@ -155,7 +125,7 @@ F 3 "" H 5050 3450 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R3
+L esp8266-rescue:R R3
 U 1 1 5823A84A
 P 3250 3200
 F 0 "R3" V 3330 3200 50  0000 C CNN
@@ -166,7 +136,7 @@ F 3 "" H 3250 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L esp8266-rescue:R R2
 U 1 1 5823A89B
 P 4850 3150
 F 0 "R2" V 4930 3150 50  0000 C CNN
@@ -177,7 +147,7 @@ F 3 "" H 4850 3150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L esp8266-rescue:R R1
 U 1 1 5823A960
 P 4650 3150
 F 0 "R1" V 4730 3150 50  0000 C CNN
@@ -188,7 +158,7 @@ F 3 "" H 4650 3150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Screw_Terminal_1x02-RESCUE-esp8266 J1
+L esp8266-rescue:Screw_Terminal_1x02-RESCUE-esp8266 J1
 U 1 1 5823AAE7
 P 3650 1800
 F 0 "J1" H 3650 2050 50  0000 C TNN
@@ -199,7 +169,7 @@ F 3 "" H 3625 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Screw_Terminal_1x03 J2
+L esp8266-rescue:Screw_Terminal_1x03 J2
 U 1 1 5823AB66
 P 1100 3250
 F 0 "J2" H 1100 3600 50  0000 C TNN
@@ -210,7 +180,7 @@ F 3 "" H 1075 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 5823ACE3
 P 3950 1900
 F 0 "#PWR06" H 3950 1650 50  0001 C CNN
@@ -221,7 +191,7 @@ F 3 "" H 3950 1900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR07
+L power:VCC #PWR07
 U 1 1 5823AD2F
 P 3950 1700
 F 0 "#PWR07" H 3950 1550 50  0001 C CNN
@@ -232,7 +202,7 @@ F 3 "" H 3950 1700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR08
+L power:GND #PWR08
 U 1 1 5823AD6E
 P 2800 3450
 F 0 "#PWR08" H 2800 3200 50  0001 C CNN
@@ -243,7 +213,7 @@ F 3 "" H 2800 3450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR09
+L power:+3.3V #PWR09
 U 1 1 5823ADAD
 P 3050 3050
 F 0 "#PWR09" H 3050 2900 50  0001 C CNN
@@ -254,7 +224,7 @@ F 3 "" H 3050 3050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR010
+L power:GND #PWR010
 U 1 1 5823C635
 P 3850 2950
 F 0 "#PWR010" H 3850 2700 50  0001 C CNN
@@ -265,7 +235,7 @@ F 3 "" H 3850 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH RESET1
+L esp8266-rescue:SW_PUSH RESET1
 U 1 1 5823A79D
 P 4150 2950
 F 0 "RESET1" H 4300 3060 50  0000 C CNN
@@ -286,7 +256,7 @@ TX
 Text GLabel 6900 2750 0    60   Input ~ 0
 RX
 $Comp
-L GND #PWR011
+L power:GND #PWR011
 U 1 1 5823D32B
 P 6950 2450
 F 0 "#PWR011" H 6950 2200 50  0001 C CNN
@@ -297,7 +267,7 @@ F 3 "" H 6950 2450 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_01X03 P2
+L esp8266-rescue:CONN_01X03 P2
 U 1 1 5823AA50
 P 7300 2550
 F 0 "P2" H 7300 2750 50  0000 C CNN
@@ -308,7 +278,7 @@ F 3 "" H 7300 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 5824925E
 P 6400 3200
 F 0 "#PWR012" H 6400 2950 50  0001 C CNN
@@ -320,14 +290,14 @@ F 3 "" H 6400 3200 50  0000 C CNN
 $EndComp
 Connection ~ 6750 1600
 Wire Wire Line
-	4800 1600 5650 1600
+	4800 1600 4950 1600
 Connection ~ 4950 1600
 Wire Wire Line
-	3850 1700 4200 1700
+	3850 1700 3950 1700
 Wire Wire Line
-	1300 3450 2800 3450
+	1300 3450 1400 3450
 Wire Wire Line
-	1300 3050 3250 3050
+	1300 3050 1600 3050
 Connection ~ 3050 3050
 Wire Wire Line
 	3250 3350 3100 3350
@@ -336,9 +306,8 @@ Wire Wire Line
 Wire Wire Line
 	6400 3200 6350 3200
 Wire Wire Line
-	5050 3300 5050 3450
+	5050 3300 5050 3400
 Connection ~ 4850 3300
-Connection ~ 4650 3300
 Wire Wire Line
 	4850 3000 4950 3000
 Wire Wire Line
@@ -348,16 +317,14 @@ Wire Wire Line
 Wire Wire Line
 	4650 3000 4650 2950
 Wire Wire Line
-	4450 2950 5000 2950
+	4450 2950 4650 2950
 Wire Wire Line
 	5000 2950 5000 3200
 Wire Wire Line
 	5000 3200 5050 3200
 Connection ~ 4650 2950
 Wire Wire Line
-	3850 2950 3850 2950
-Wire Wire Line
-	4650 3300 5050 3300
+	4650 3300 4850 3300
 Wire Wire Line
 	5050 2850 5050 3000
 Wire Wire Line
@@ -379,14 +346,14 @@ Wire Wire Line
 Wire Wire Line
 	6050 2000 6050 1900
 Wire Wire Line
-	4950 2000 6750 2000
+	4950 2000 6050 2000
 Wire Wire Line
 	6750 2000 6750 1900
 Wire Wire Line
 	4950 2000 4950 1900
 Connection ~ 6050 2000
 $Comp
-L VDD #PWR013
+L power:VDD #PWR013
 U 1 1 5824AFFA
 P 6750 1450
 F 0 "#PWR013" H 6750 1300 50  0001 C CNN
@@ -399,7 +366,7 @@ $EndComp
 Wire Wire Line
 	6750 1450 6750 1600
 $Comp
-L CONN_01X03 P3
+L esp8266-rescue:CONN_01X03 P3
 U 1 1 5824B234
 P 1500 2750
 F 0 "P3" V 1715 2745 50  0000 C CNN
@@ -410,11 +377,9 @@ F 3 "" H 1500 2750 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	1300 3250 3100 3250
-Wire Wire Line
-	3100 3250 3100 3450
+	3100 3250 3100 3350
 $Comp
-L CONN_01X03 P4
+L esp8266-rescue:CONN_01X03 P4
 U 1 1 5824B795
 P 1900 2750
 F 0 "P4" V 1865 2928 50  0000 L CNN
@@ -425,7 +390,7 @@ F 3 "" H 1900 2750 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L CONN_01X03 P5
+L esp8266-rescue:CONN_01X03 P5
 U 1 1 5824B805
 P 2300 2750
 F 0 "P5" V 2515 2745 50  0000 C CNN
@@ -436,7 +401,7 @@ F 3 "" H 2300 2750 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L CONN_01X03 P6
+L esp8266-rescue:CONN_01X03 P6
 U 1 1 5824B867
 P 2700 2750
 F 0 "P6" V 2665 2928 50  0000 L CNN
@@ -451,9 +416,6 @@ Wire Wire Line
 Connection ~ 1400 3450
 Wire Wire Line
 	1500 2950 1500 3250
-Wire Wire Line
-	1500 3250 1550 3250
-Connection ~ 1550 3250
 Wire Wire Line
 	1600 2950 1600 3050
 Connection ~ 1600 3050
@@ -477,8 +439,6 @@ Wire Wire Line
 Connection ~ 2400 3050
 Wire Wire Line
 	2600 2950 2600 3450
-Wire Wire Line
-	2600 3450 2550 3450
 Connection ~ 2550 3450
 Wire Wire Line
 	2700 2950 2700 3250
@@ -492,7 +452,7 @@ Wire Wire Line
 	3100 3450 3300 3450
 Connection ~ 3100 3350
 $Comp
-L JUMPER_NO_Small JP1
+L esp8266-rescue:JUMPER_NO_Small JP1
 U 1 1 5825118E
 P 4300 1350
 F 0 "JP1" H 4300 1535 50  0000 C CNN
@@ -516,7 +476,7 @@ CH_PD
 Text Label 5000 3200 0    60   ~ 0
 RST
 $Comp
-L LD1117S33TR U1
+L esp8266-rescue:LD1117S33TR U1
 U 1 1 582742FF
 P 6050 1650
 F 0 "U1" H 6050 2058 50  0000 C CNN
@@ -529,11 +489,11 @@ $EndComp
 Wire Wire Line
 	7350 1600 7200 1600
 Wire Wire Line
-	6450 1600 6900 1600
+	6450 1600 6750 1600
 Wire Wire Line
 	3850 1900 3950 1900
 $Comp
-L GND #PWR014
+L power:GND #PWR014
 U 1 1 5894FA52
 P 5350 3650
 F 0 "#PWR014" H 5350 3400 50  0001 C CNN
@@ -544,7 +504,7 @@ F 3 "" H 5350 3650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C3
+L esp8266-rescue:C_Small C3
 U 1 1 5894FAF9
 P 5350 3500
 F 0 "C3" H 5442 3546 50  0000 L CNN
@@ -559,4 +519,44 @@ Wire Wire Line
 Connection ~ 5050 3400
 Wire Wire Line
 	5350 3600 5350 3650
+Wire Wire Line
+	6750 1600 6900 1600
+Wire Wire Line
+	4950 1600 5650 1600
+Wire Wire Line
+	3050 3050 3250 3050
+Wire Wire Line
+	4850 3300 5050 3300
+Wire Wire Line
+	4650 2950 5000 2950
+Wire Wire Line
+	6050 2000 6750 2000
+Wire Wire Line
+	1400 3450 1800 3450
+Wire Wire Line
+	1600 3050 2000 3050
+Wire Wire Line
+	1800 3450 2200 3450
+Wire Wire Line
+	1900 3250 2300 3250
+Wire Wire Line
+	2000 3050 2400 3050
+Wire Wire Line
+	2300 3250 2700 3250
+Wire Wire Line
+	2400 3050 2800 3050
+Wire Wire Line
+	2700 3250 3100 3250
+Wire Wire Line
+	2800 3050 3050 3050
+Wire Wire Line
+	3100 3350 3100 3450
+Wire Wire Line
+	3950 1700 4200 1700
+Wire Wire Line
+	5050 3400 5050 3450
+Wire Wire Line
+	1300 3250 1900 3250
+Wire Wire Line
+	2200 3450 2800 3450
 $EndSCHEMATC
