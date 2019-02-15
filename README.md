@@ -1,6 +1,6 @@
 # ESP8266_DS18B20
 
-Most parts are optional this is just a little breakout board for the esp8266. I just used parts that I had already at home. With the little prototyping area it allows to add different little projects. For example I have a some boards connected to Smartthings hub. Right now I'm using 3 versions, log 5 temperatures, red and green status LED, press two buttons on bed remote control.
+Most parts are optional, this is just a little breakout board for the esp8266. I just used parts that I had already at home. With the little prototyping area it allows to add different little projects. For example I have a some boards connected to Smartthings hub. Right now I'm using 3 versions: log 5 temperatures, red and green status LED, press two buttons on bed remote control.
 
 https://htmlpreview.github.io/?https://github.com/alpharesearch/ESP8266_DS18B20/blob/master/esp8266/bom/ibom.html
 
